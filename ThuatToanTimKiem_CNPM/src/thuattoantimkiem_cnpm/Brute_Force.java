@@ -4,6 +4,8 @@
  */
 package thuattoantimkiem_cnpm;
 
+import java.util.Random;
+
 public class Brute_Force {
     public static void search(String pattern, String text) {
         int m = pattern.length();
@@ -20,6 +22,11 @@ public class Brute_Force {
 
     public static void main(String[] args) {
         String text = "ABABABABABABAC";
+//        Random random = new Random();
+//        for (int i = 0; i < 100000; i++) {
+//            char c = (char) (random.nextInt(65,91));
+//            text = c + text;
+//        }
         String pattern = "ABABAC";
         search(pattern, text);
     }
